@@ -29,10 +29,8 @@ export const fetchPlayers = async (): Promise<IPlayer[]> => {
     const $ = cheerio.load(response.data);
     const rows = $('table#salaries-table tbody tr');
 
-    const rawData = [];
     const players = [];
     rows.each((i, elem) => {
-      rawData.push($(elem));
       const name = $(elem).find('td.player-name').text();
       const salary = cleanSalary($(elem).find('td.player-salary').text());
       const year = parseInt($(elem).find('td.player-year').text(), 10);
