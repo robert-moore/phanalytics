@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rob Moore",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "deploy": "serverless deploy -v --aws-profile floom"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.21",
+    "nodemon": "^2.0.4",
+    "serverless-offline": "^6.5.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
