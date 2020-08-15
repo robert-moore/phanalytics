@@ -22,3 +22,4 @@ functions:
       - http:
           path: players
           method: get
+          cors: true
