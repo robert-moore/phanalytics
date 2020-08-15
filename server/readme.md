@@ -5,27 +5,32 @@ A serverless NodeJS function to fetch and clean player and salary data from [thi
 ## Getting Started
 
 1. Make sure `serverless` is installed globally.
-```
+
+```cli
 yarn add global serverless
 ```
 
-2. Install dependencies
-```
+1. Install dependencies
+
+```cli
 yarn
 ```
-3. Run server locally with
-```
+
+1. Run server locally with
+
+```cli
 serverless offline
 ```
 
 ## Implementation
 
-This serverless function is written in Typescript. Typescript is compiled to JS before deploying to AWS Lambda through `serverless-plugin-typescript`. 
+This serverless function is written in Typescript. Typescript is compiled to JS before deploying to AWS Lambda through `serverless-plugin-typescript`.
 
 The core functionality lives in `/src/playerScraper.ts`. The `axios` library is used to `GET` the HTML response from the source, and the `cheerio` library is used to parse the data. A simple regex is used to clean the salary data.
 
 The returned data implements the following interface
-```
+
+```typescript
 interface IPlayer {
   name: string;
   firstName: string;
@@ -38,7 +43,6 @@ interface IPlayer {
 
 ## Endpoint
 
-
 `GET /players`: returns `IPlayer[]`
 
-Hosted at https://8x7idacyej.execute-api.us-east-1.amazonaws.com/prod/players
+Hosted at <https://8x7idacyej.execute-api.us-east-1.amazonaws.com/prod/players>
