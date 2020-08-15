@@ -8,7 +8,7 @@
     <div v-else v-loading="[LOAD_STATE.LOADING, LOAD_STATE.UNLOADED].includes(loadState)">
       <section class="section">
         <div class="container">
-          <player-table />
+          <player-table v-if="players" />
         </div>
       </section>
     </div>
@@ -33,6 +33,9 @@ export default {
   computed: {
     loadState() {
       return this.$store.state.playersLoadState;
+    },
+    players() {
+      return this.$store.state.players;
     },
   },
   created() {
