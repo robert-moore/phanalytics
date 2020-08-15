@@ -1,0 +1,281 @@
+.has-no-margin-top {
+  margin-top: 0 !important;
+}
+
+.has-no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+.has-no-margin-vertical {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.has-no-margin-left {
+  margin-left: 0 !important;
+}
+
+.has-no-margin-right {
+  margin-right: 0 !important;
+}
+
+.has-no-margin-horizontal {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.has-no-padding-top {
+  padding-top: 0 !important;
+}
+
+.has-no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+
+.has-no-padding-vertical {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.has-no-padding-left {
+  padding-left: 0 !important;
+}
+
+.has-no-padding-right {
+  padding-right: 0 !important;
+}
+
+.has-small-margin-top {
+  margin-top: 0.5em;
+}
+
+.has-small-margin-bottom {
+  margin-bottom: 0.5em;
+}
+
+.has-small-margin-right {
+  margin-right: 0.5em;
+}
+
+.has-small-margin-left {
+  margin-left: 0.5em;
+}
+
+.has-small-margin-vertical {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.has-small-padding-top {
+  padding-top: 0.5em;
+}
+
+.has-small-padding-bottom {
+  padding-bottom: 0.5em;
+}
+
+.has-small-padding-vertical {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.has-margin-top {
+  margin-top: 1em;
+}
+
+.has-margin-bottom {
+  margin-bottom: 1em;
+}
+
+.has-margin-right {
+  margin-right: 1em;
+}
+
+.has-margin-left {
+  margin-left: 1em;
+}
+
+.has-margin-vertical {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.has-large-margin-top {
+  margin-top: 2em;
+}
+
+.has-large-margin-bottom {
+  margin-bottom: 2em;
+}
+
+.has-large-margin-right {
+  margin-right: 2em;
+}
+
+.has-large-margin-left {
+  margin-left: 2em;
+}
+
+.has-large-margin-vertical {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.has-padding-top {
+  padding-top: 1em;
+}
+
+.has-padding-bottom {
+  padding-bottom: 1em;
+}
+
+.has-padding-right {
+  padding-right: 1em;
+}
+
+.has-padding-left {
+  padding-left: 1em;
+}
+
+.has-padding-vertical {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.has-large-padding-top {
+  padding-top: 2em;
+}
+
+.has-large-padding-bottom {
+  padding-bottom: 2em;
+}
+
+.has-large-padding-right {
+  padding-right: 2em;
+}
+
+.has-large-padding-left {
+  padding-left: 2em;
+}
+
+.has-large-padding-vertical {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.has-large-padding-horizontal {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.has-large-padding {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.has-margins-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.narrow-container {
+  max-width: 720px;
+}
+
+.narrowish-container {
+  max-width: 920px;
+}
+
+.narrower-container {
+  max-width: 1024px;
+}
+
+.has-font-slab {
+  font-family: 'Roboto Slab' !important;
+}
+
+.has-border-radius-10 {
+  border-radius: 10px;
+}
+
+.grade {
+  background-image: linear-gradient(180deg, #fff, #f4f5f9);
+  min-height: 100vh;
+}
+
+.has-position-relative {
+  position: relative;
+}
+
+.has-cursor-pointer {
+  cursor: pointer;
+}
+
+.has-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+}
+
+.has-shadow-top {
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+}
+
+.has-light-shadow {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.has-light-shadow-top {
+  box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.has-diffused-shadow {
+  box-shadow: 0 10px 24px 0 rgba(82, 91, 115, 0.12);
+}
+
+.divider {
+  position: relative;
+  z-index: 1;
+  width: 40px;
+  height: 3px;
+  margin: 16px auto 16px;
+  background-color: #dee2ed;
+}
+
+.divider.white {
+  background-color: #fff;
+}
+
+.divider.dark-bg {
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.divider.no-margin-top {
+  margin-top: 0px;
+}
+
+@mixin breakpoint($class) {
+  @if $class==mobile {
+    @media screen and (max-width: $tablet - 1px) {
+      @content;
+    }
+  } @else if $class==tablet {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  } @else if $class==desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  } @else if $class==widescreen {
+    @media (min-width: $widescreen) {
+      @content;
+    }
+  } @else if $class==fullhd {
+    @media (min-width: $fullhd) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: mobile, tablet";
+  }
+}

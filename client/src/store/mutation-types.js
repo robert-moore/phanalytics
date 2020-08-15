@@ -1,0 +1,2 @@
+export const SET_PLAYERS = 'SET_PLAYERS';
+export const SET_PLAYERS_LOAD_STATE = 'SET_PLAYERS_LOAD_STATE';
