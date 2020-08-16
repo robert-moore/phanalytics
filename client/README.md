@@ -2,7 +2,7 @@
 
 The client is a VueJS app which is deployed at [phanalytics.app](https://phanalytics.app). The [element-ui component library](https://element.eleme.io/#/) and [Bulma CSS Framework](https://bulma.io/) are both leveraged.
 
-The app points at a deployed (AWS Lambda) instance of the backend. The API integration can be found under [src/api](./src/api/index.js).
+The app points at a deployed (AWS Lambda) instance of the backend. The API integration can be found under [src/api](/client/src/api/index.js).
 
 The Vuex store is used to handle data fetching, including the state of the loaded data (unloaded, loading, loaded, error loading) and appropriately display information to the client.
 

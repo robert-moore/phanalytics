@@ -1,4 +1,4 @@
-# Backend
+# Phanalytics Backend
 
 A serverless NodeJS function to fetch and clean player and salary data from [this source data](https://questionnaire-148920.appspot.com/swe/data.html).
 
