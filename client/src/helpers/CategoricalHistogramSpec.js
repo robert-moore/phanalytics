@@ -6,11 +6,11 @@ function CategoricalHistogramBaseSpec() {
     width: 920,
     config: {
       group: { fill: 'white' },
-      axis: { labelFont: 'lato', titleFont: 'lato' },
-      mark: { font: 'lato' },
+      axis: { labelFont: 'Nunito Sans', titleFont: 'Nunito Sans' },
+      mark: { font: 'Nunito Sans' },
       title: {
-        font: 'lato',
-        subtitleFont: 'lato',
+        font: 'Nunito Sans',
+        subtitleFont: 'Nunito Sans',
         fontSize: 30,
         color: '#252d39',
         // fontWeight: 700
@@ -21,8 +21,8 @@ function CategoricalHistogramBaseSpec() {
         // anchor: 'start'
       },
       legend: {
-        labelFont: 'lato',
-        titleFont: 'lato',
+        labelFont: 'Nunito Sans',
+        titleFont: 'Nunito Sans',
         orient: 'top-right',
         fillColor: 'white',
         padding: 10,
@@ -109,8 +109,9 @@ function CategoricalHistogramBaseSpec() {
         labelColor: '#647492',
         titleColor: '#647492',
         titleFontWeight: 800,
-        titleFontSize: 12,
-        titlePadding: 8,
+        titleFontSize: 14,
+        titlePadding: 10,
+        format: '$,.2s',
         title: 'Salary',
       },
       {
@@ -123,8 +124,8 @@ function CategoricalHistogramBaseSpec() {
         labelColor: '#647492',
         titleColor: '#647492',
         titleFontWeight: 800,
-        titleFontSize: 12,
-        titlePadding: 10,
+        titleFontSize: 14,
+        titlePadding: 14,
         title: 'Players',
       },
     ],
@@ -181,6 +182,9 @@ function CategoricalHistogramBaseSpec() {
             font: { value: 'Nunito Sans' },
             fill: { value: '#454d59' },
             fontWeight: { value: 'bold' },
+            tooltip: {
+              signal: "{ 'title': 'Qualifying Offer', 'Exact Amount': '$' + datum.amount }",
+            },
           },
         },
       },
@@ -199,6 +203,9 @@ function CategoricalHistogramBaseSpec() {
             font: { value: 'Nunito Sans' },
             fill: { value: '#252d39' },
             fontWeight: { value: 'bold' },
+            tooltip: {
+              signal: "{ 'title': 'Qualifying Offer', 'Exact Amount': '$' + datum.amount }",
+            },
           },
         },
       },
