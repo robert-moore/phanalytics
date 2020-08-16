@@ -1,6 +1,6 @@
 # Phanalytics
 
-Hosted on [phanalytics.app](https://phanalytics.app/). Run locally by following the development instructions in the [client](client/readme.md) and [server](server/README.md) directories.
+Hosted on [phanalytics.app](https://phanalytics.app/). Run locally by following the development instructions in the [client](./client/readme.md) and [server](./server/README.md) directories.
 
 ## Features
 
@@ -27,6 +27,6 @@ A full table view of the cleaned data is available, **including salary ranking f
 ## Implementation Overview
 
 A serverless NodeJS function (deployed on AWS Lambda) scrapes and cleans the [external source data](https://questionnaire-148920.appspot.com/swe/data.html).
-More server details can be found in [the server documentation](server/readme.md).
+More server details can be found in [the server documentation](./server/readme.md).
 
-The client app is written in VueJS and deployed using Netlify to [phanalytics.app](https://phanalytics.app/). More client details can be found in [the client documentation](client/README.md).
+The client app is written in VueJS and deployed using Netlify to [phanalytics.app](https://phanalytics.app/). More client details can be found in [the client documentation](./client/README.md).
