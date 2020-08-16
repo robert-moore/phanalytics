@@ -8,7 +8,9 @@
     <div v-else v-loading="[LOAD_STATE.LOADING, LOAD_STATE.UNLOADED].includes(loadState)">
       <section class="section has-large-padding-bottom">
         <div class="container">
-          <h1 class="is-size-2 has-text-weight-semibold has-text-centered">MLB Qualifying Offer in 2016</h1>
+          <h1 class="is-size-2-3 has-text-weight-semibold has-text-centered has-text-grey-dark">
+            MLB Qualifying Offer in 2016
+          </h1>
           <div class="divider"></div>
         </div>
       </section>

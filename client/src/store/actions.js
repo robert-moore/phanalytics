@@ -35,8 +35,8 @@ async function getPlayers({ commit }) {
       addSalaryRanks(res.data);
       const qualifyingOffer = res.data.slice(0, 125).reduce((sum, p) => sum + p.salary, 0) / 125;
       const cutoffSalary = res.data[124].salary;
-      commit(mutations.SET_QUALIFYING_OFFER, qualifyingOffer);
-      commit(mutations.SET_CUTOFF_SALARY, cutoffSalary);
+      commit(mutations.SET_QUALIFYING_OFFER, +qualifyingOffer.toFixed(2));
+      commit(mutations.SET_CUTOFF_SALARY, +cutoffSalary.toFixed(2));
       commit(mutations.SET_PLAYERS, res.data);
       commit(mutations.SET_PLAYERS_LOAD_STATE, LOAD_STATE.LOADED);
       return LOAD_STATE.LOADED;
