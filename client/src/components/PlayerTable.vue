@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="section has-no-padding-vertical is-clearfix">
-      <div class="tip ghost is-size-6-7">
+      <div class="tip primary is-size-6-7">
         <p class="has-text-weight-bold">Note:</p>
         <p>{{ playersWithoutSalary }} players with no salary data.</p>
       </div>
@@ -31,7 +31,7 @@
         <el-table-column label="Salary Rank" prop="salaryRank">
           <template slot-scope="scope">
             <div v-if="scope.row.salaryRank !== null">
-              <el-tag :type="scope.row.salaryRank <= 124 ? 'primary' : 'info'"
+              <el-tag :type="scope.row.salaryRank <= 124 ? 'danger' : 'primary'"
                 >{{ scope.row.salaryRank + 1 }}{{ scope.row.salaryTie ? ' (tie)' : '' }}</el-tag
               >
             </div>

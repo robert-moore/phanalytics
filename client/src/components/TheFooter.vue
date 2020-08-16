@@ -1,14 +1,14 @@
 <template>
   <div>
-    <section class="section">
+    <section class="section has-background-primary">
       <div class="container">
         <el-divider></el-divider>
         <nav class="level">
           <div class="level-left">
             <router-link :to="{ name: 'home' }" class="level-item is-size-6">
-              <span class="has-text-weight-bold">Phanalytics</span>
+              <span class="has-text-weight-bold has-text-white">Phanalytics</span>
             </router-link>
-            <a href="mailto:me@robmoo.re" target="_blank" class="level-item">Contact Me</a>
+            <a href="mailto:me@robmoo.re" target="_blank" class="level-item has-text-white">Contact Me</a>
           </div>
         </nav>
       </div>

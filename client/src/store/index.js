@@ -10,6 +10,8 @@ export default new Vuex.Store({
   state: {
     players: null,
     playersLoadState: LOAD_STATE.UNLOADED,
+    qualifyingOffer: null,
+    cutoffSalary: null,
   },
   mutations,
   actions,

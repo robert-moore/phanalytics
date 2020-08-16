@@ -5,6 +5,9 @@
         <router-link class="navbar-item" :to="{ name: 'home' }">
           <img src="@/assets/logo.png" style="max-height: 2.5em" alt="Logo" />
         </router-link>
+        <router-link :to="{ name: 'home' }" class="navbar-item is-size-6">
+          <span class="has-text-weight-semi-bold is-uppercase has-text-primary">Phanalytics</span>
+        </router-link>
         <a
           id="navbarMenuBurger"
           role="button"
