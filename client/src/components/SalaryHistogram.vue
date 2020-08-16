@@ -60,7 +60,7 @@ export default {
         .thresholds(15);
       const binnedData = binner(filteredPlayers);
       const getBinClass = (bin) => {
-        if (bin.x1 < this.cutoffSalary) {
+        if (bin.x1 <= this.cutoffSalary) {
           return 'Outside Top 125';
         } else if (bin.x0 >= this.cutoffSalary) {
           return 'Top 125';
