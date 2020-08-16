@@ -65,7 +65,7 @@ export default {
       sort: 'salaryDescending',
       search: '',
       page: 1,
-      pageSize: 15,
+      pageSize: 12,
       sortOptions: {
         nameDescending: { getter: getLastName, reverse: true, label: 'Last Name: Z to A' },
         nameAscending: { getter: getLastName, reverse: false, label: 'Last Name: A to Z' },
