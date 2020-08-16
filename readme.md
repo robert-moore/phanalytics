@@ -1,6 +1,6 @@
 # Phanalytics
 
-Hosted on [phanalytics.app](https://phanalytics.app/). Run locally by following the development instructions in the [client](./client/readme.md) and [server](./server/README.md) directories.
+Hosted on [phanalytics.app](https://phanalytics.app/). Run locally by following the development instructions in the [client](./client/README.md) and [server](./server/readme.md) directories.
 
 ## Features
 
