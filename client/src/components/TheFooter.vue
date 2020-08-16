@@ -8,6 +8,9 @@
             <router-link :to="{ name: 'home' }" class="level-item is-size-6">
               <span class="has-text-weight-bold has-text-white">Phanalytics</span>
             </router-link>
+            <a href="https://github.com/robert-moore/phanalytics" target="_blank" class="level-item has-text-white"
+              >View on Github</a
+            >
             <a href="mailto:me@robmoo.re" target="_blank" class="level-item has-text-white">Contact Me</a>
           </div>
         </nav>

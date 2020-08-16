@@ -22,8 +22,10 @@
         </a>
       </div>
       <div class="navbar-menu" id="navbarMenu">
-        <div class="navbar-start">
-          <!-- <router-link :to="{ name: 'home' }" class="navbar-item">Home</router-link> -->
+        <div class="navbar-end">
+          <a href="https://github.com/robert-moore/phanalytics" target="_blank" class="navbar-item">
+            <el-button type="primary" size="medium">View on Github</el-button>
+          </a>
         </div>
       </div>
     </div>
